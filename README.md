@@ -3,7 +3,7 @@
 &nbsp;
 
 ### 🎯 OBJETIVO
-Analisar os itens abaixo, abstraí-los como uma classe e criar **2 objetos** de cada, **5 atributos** e **3 métodos**. Convém **imprimir** o valor de pelo menos **1 atributo** e **1 método**
+Analisar os itens abaixo, abstraí-los como uma classe e criar **2 objetos** de cada, **5 atributos** e **3 métodos**. Convém **imprimir** o valor de pelo menos **1 atributo** e **1 método**. A ideia é treinar a sintaxe e abstração da POO.
 
 ### 📝 LISTA
 - Escola
