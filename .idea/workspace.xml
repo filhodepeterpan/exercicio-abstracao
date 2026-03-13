@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="13900e87-3ef8-4255-a0c8-95d5d4a201b3" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/br/edu/fatecpg/tecprog/abstracao/model/Praia.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/edu/fatecpg/tecprog/abstracao/model/Praia.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/edu/fatecpg/tecprog/abstracao/model/Praca.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/edu/fatecpg/tecprog/abstracao/model/Praca.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/br/edu/fatecpg/tecprog/abstracao/view/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/edu/fatecpg/tecprog/abstracao/view/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -35,8 +35,9 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.Main.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "doug",
     "kotlin-language-version-configured": "true",
     "onboarding.tips.debug.path": "C:/Users/dougl/Documents/FATEC/Técnicas de Programação/exercicio-abstracao/src/br/edu/fatecpg/tecprog/abstracao/view/Main.java",
     "settings.editor.selected.configurable": "preferences.editor"
