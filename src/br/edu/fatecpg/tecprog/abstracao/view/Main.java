@@ -110,5 +110,26 @@ public class Main {
         restaurante1.apresentar();
         restaurante2.apresentar();
 
+        // HOTEL
+        Hotel hotel1 = new Hotel();
+        Hotel hotel2 = new Hotel();
+
+        hotel1.nome = "Hotel Unique";
+        hotel1.endereco = "Av. Brigadeiro Luís Antônio, São Paulo";
+        hotel1.quartosDisponiveis = 94;
+        hotel1.classificacaoEstrelas = 5;
+        hotel1.ofereceCafeDaManha = true;
+
+        hotel2.nome = "Casa da Felicidade";
+        hotel2.endereco = "Centro - São Paulo";
+        hotel2.quartosDisponiveis = 182;
+        hotel2.classificacaoEstrelas = 3;
+        hotel2.ofereceCafeDaManha = false;
+
+        hotel1.apresentar();
+        hotel2.apresentar();
+
+        hotel1.reservarQuarto();
+        hotel2.limparQuarto();
     }
 }
