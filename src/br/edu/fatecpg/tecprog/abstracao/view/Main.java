@@ -1,5 +1,5 @@
 package br.edu.fatecpg.tecprog.abstracao.view;
-import br.edu.fatecpg.tecprog.abstracao.model.Praia;
+import br.edu.fatecpg.tecprog.abstracao.model.*;
 
 public class Main {
     public static void main(String [] args){
@@ -26,7 +26,199 @@ public class Main {
         praiaGuilhermina.monitorarBanhistas();
 
        // PRAÇA
+        Praca pracaMorgado = new Praca();
+        Praca pracaMunicipal = new Praca();
 
+        pracaMorgado.nome = "Praça Morgado";
+        pracaMorgado.qtdFuncionarios = 3;
+        pracaMorgado.qtdBancos = 6;
+        pracaMorgado.arvoresEncontradas = new String[] {"Palmeira", "Aroeira"};
+        pracaMorgado.posteDeIluminacao = false;
+
+        pracaMunicipal.nome = "Praça Municipal";
+        pracaMunicipal.qtdFuncionarios = 27;
+        pracaMunicipal.qtdBancos = 18;
+        pracaMunicipal.arvoresEncontradas = new String[] {"Samambaia", "Palmeira", "Coqueiro", "Aroeira", "Ipê-amarelo", "Bambu" };
+        pracaMunicipal.posteDeIluminacao = true;
+
+        pracaMorgado.apresentar();
+        pracaMunicipal.apresentar();
+
+        pracaMorgado.realizarEvento();
+        pracaMunicipal.iluminarPraca();
+
+        // AEROPORTO
+        Aeroporto guarulhos = new Aeroporto();
+        Aeroporto brasilia = new Aeroporto();
+
+        guarulhos.nome = "Aeroporto Internacional de São Paulo/Guarulhos";
+        guarulhos.bairro = "Cumbica";
+        guarulhos.companhiasAereas = new String[] {"LATAM", "Gol", "Azul", "American Airlines", "Air France", "Lufthansa"};
+        guarulhos.qtdVoos = 800;
+        guarulhos.tamanho = 13.86;
+
+        brasilia.nome = "Aeroporto Internacional de Brasília";
+        brasilia.bairro = "Lago Sul";
+        brasilia.companhiasAereas = new String[] {"LATAM", "Gol", "Azul", "TAP Air Portugal"};
+        brasilia.qtdVoos = 350;
+        brasilia.tamanho = 11.50;
+        
+        guarulhos.apresentar();
+        brasilia.apresentar();
+
+        guarulhos.venderPassagem();
+        brasilia.autorizarEmbarque();
+
+        // ESTAÇÃO DE TREM
+        EstacaoDeTrem estacaoBras = new EstacaoDeTrem();
+        EstacaoDeTrem estacaoLuz = new EstacaoDeTrem();
+
+        estacaoBras.nome = "Estação Brás";
+        estacaoBras.endereco = "Praça Agente Cícero, Brás - São Paulo";
+        estacaoBras.linhasDeTrem = new String[] {"Linha 7-Rubi", "Linha 10-Turquesa", "Linha 11-Coral", "Linha 12-Safira", "Linha 13-Jade"};
+        estacaoBras.itinerarios = new String[] {"Jundiaí ↔ Rio Grande da Serra", "Estudantes ↔ Luz", "Calmon Viana ↔ Brás", "Aeroporto-Guarulhos ↔ Engenheiro Goulart"};
+        estacaoBras.expediente = "04:00 - 00:00";
+
+        estacaoLuz.nome = "Estação da Luz";
+        estacaoLuz.endereco = "Praça da Luz, Bom Retiro - São Paulo";
+        estacaoLuz.linhasDeTrem = new String[] {"Linha 7-Rubi", "Linha 11-Coral", "Linha 13-Jade"};
+        estacaoLuz.itinerarios = new String[] {"Jundiaí ↔ Luz", "Estudantes ↔ Luz", "Aeroporto-Guarulhos ↔ Luz"};
+        estacaoLuz.expediente = "04:00 - 00:00";
+
+        estacaoBras.apresentar();
+        estacaoLuz.apresentar();
+
+        estacaoBras.darPartida();
+        estacaoLuz.desembarcarPassageiro();
+
+        // RESTAURANTE
+        Restaurante restaurante1 = new Restaurante();
+        Restaurante restaurante2 = new Restaurante();
+
+        restaurante1.nome = "Fogo de Chão";
+        restaurante1.endereco = "Av. dos Bandeirantes, São Paulo";
+        restaurante1.cnpj = "03.123.456/0001-89";
+        restaurante1.especialidade = "Churrasco";
+        restaurante1.quantidadeMesas = 80;
+
+        restaurante2.nome = "A Casa das Massas";
+        restaurante2.endereco = "Rua Araújo, Centro - São Paulo";
+        restaurante2.cnpj = "11.987.654/0001-55";
+        restaurante2.especialidade = "Comida Italiana";
+        restaurante2.quantidadeMesas = 40;
+
+        restaurante1.apresentar();
+        restaurante2.apresentar();
+
+        // HOTEL
+        Hotel hotel1 = new Hotel();
+        Hotel hotel2 = new Hotel();
+
+        hotel1.nome = "Hotel Unique";
+        hotel1.endereco = "Av. Brigadeiro Luís Antônio, São Paulo";
+        hotel1.quartosDisponiveis = 94;
+        hotel1.classificacaoEstrelas = 5;
+        hotel1.ofereceCafeDaManha = true;
+
+        hotel2.nome = "Casa da Felicidade";
+        hotel2.endereco = "Centro - São Paulo";
+        hotel2.quartosDisponiveis = 182;
+        hotel2.classificacaoEstrelas = 3;
+        hotel2.ofereceCafeDaManha = false;
+
+        hotel1.apresentar();
+        hotel2.apresentar();
+
+        hotel1.reservarQuarto();
+        hotel2.limparQuarto();
+
+        // MUSEU
+        Museu museu1 = new Museu();
+        Museu museu2 = new Museu();
+
+        museu1.nome = "Museu do Ipiranga";
+        museu1.endereco = "Parque da Independência, São Paulo";
+        museu1.qtdFuncionarios = 120;
+        museu1.exposicaoAtual = "Independência do Brasil";
+        museu1.precoIngresso = 30.00;
+
+        museu2.nome = "MASP";
+        museu2.endereco = "Av. Paulista, São Paulo";
+        museu2.qtdFuncionarios = 200;
+        museu2.exposicaoAtual = "Arte Europeia";
+        museu2.precoIngresso = 50.00;
+
+        museu1.apresentar();
+        museu2.apresentar();
+
+        museu1.abrirMuseu();
+        museu2.comprarArtefato();
+
+        // FAZENDA
+        Fazenda fazenda1 = new Fazenda();
+        Fazenda fazenda2 = new Fazenda();
+
+        fazenda1.nome = "Fazenda Boa Vista";
+        fazenda1.dono = "João Pereira";
+        fazenda1.tipo = "Pecuária";
+        fazenda1.qtdAnimais = 350;
+        fazenda1.hectares = 1200;
+
+        fazenda2.nome = "Fazenda Santa Maria";
+        fazenda2.dono = "Carlos Silva";
+        fazenda2.tipo = "Agricultura";
+        fazenda2.qtdAnimais = 80;
+        fazenda2.hectares = 600;
+
+        fazenda1.apresentar();
+        fazenda2.apresentar();
+
+        fazenda1.plantar();
+        fazenda2.alimentarAnimais();
+
+        // DELEGACIA
+        Delegacia delegacia1 = new Delegacia();
+        Delegacia delegacia2 = new Delegacia();
+
+        delegacia1.nome = "1º Distrito Policial";
+        delegacia1.nivelAbrangencia = "Municipal";
+        delegacia1.qtdViaturas = 12;
+        delegacia1.qtdPoliciais = 85;
+        delegacia1.nivelGovernamental = "Estadual";
+
+        delegacia2.nome = "Polícia Federal - SP";
+        delegacia2.nivelAbrangencia = "Nacional";
+        delegacia2.qtdViaturas = 25;
+        delegacia2.qtdPoliciais = 200;
+        delegacia2.nivelGovernamental = "Federal";
+
+        delegacia1.apresentar();
+        delegacia2.apresentar();
+
+        delegacia1.prenderSuspeito();
+        delegacia1.registrarBO();
+
+        // IGREJA
+        Igreja igreja1 = new Igreja();
+        Igreja igreja2 = new Igreja();
+
+        igreja1.nome = "Catedral da Sé";
+        igreja1.endereco = "Praça da Sé, São Paulo";
+        igreja1.religiao = "Católica";
+        igreja1.diocese = "Arquidiocese de São Paulo";
+        igreja1.numeroAssentos = 8000;
+
+        igreja2.nome = "Igreja Universal";
+        igreja2.endereco = "Av. João Dias, São Paulo";
+        igreja2.religiao = "Evangélica";
+        igreja2.diocese = "Templo de Salomão";
+        igreja2.numeroAssentos = 10000;
+
+        igreja1.apresentar();
+        igreja2.apresentar();
+
+        igreja1.realizarMatrimonio();
+        igreja2.colherDizimo();
 
     }
 }

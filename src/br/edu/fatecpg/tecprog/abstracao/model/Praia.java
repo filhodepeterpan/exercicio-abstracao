@@ -11,8 +11,8 @@ public class Praia {
         System.out.printf("""
                 \nNome da praia: %s
                 Bairro: %s
-                Nível do mar: %fm
-                Extensão: %fkm
+                Nível do mar: %.2fm
+                Extensão: %.1fkm
                 Força das ondas: %s
                 """, this.nome, this.bairro, this.nivelDoMar, this.extensao, this.forcaDasOndas);
     }
