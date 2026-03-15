@@ -153,5 +153,27 @@ public class Main {
 
         museu1.abrirMuseu();
         museu2.comprarArtefato();
+
+        // FAZENDA
+        Fazenda fazenda1 = new Fazenda();
+        Fazenda fazenda2 = new Fazenda();
+
+        fazenda1.nome = "Fazenda Boa Vista";
+        fazenda1.dono = "João Pereira";
+        fazenda1.tipo = "Pecuária";
+        fazenda1.qtdAnimais = 350;
+        fazenda1.hectares = 1200;
+
+        fazenda2.nome = "Fazenda Santa Maria";
+        fazenda2.dono = "Carlos Silva";
+        fazenda2.tipo = "Agricultura";
+        fazenda2.qtdAnimais = 80;
+        fazenda2.hectares = 600;
+
+        fazenda1.apresentar();
+        fazenda2.apresentar();
+
+        fazenda1.plantar();
+        fazenda2.alimentarAnimais();
     }
 }
