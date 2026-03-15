@@ -91,5 +91,24 @@ public class Main {
         estacaoBras.darPartida();
         estacaoLuz.desembarcarPassageiro();
 
+        // RESTAURANTE
+        Restaurante restaurante1 = new Restaurante();
+        Restaurante restaurante2 = new Restaurante();
+
+        restaurante1.nome = "Fogo de Chão";
+        restaurante1.endereco = "Av. dos Bandeirantes, São Paulo";
+        restaurante1.cnpj = "03.123.456/0001-89";
+        restaurante1.especialidade = "Churrasco";
+        restaurante1.quantidadeMesas = 80;
+
+        restaurante2.nome = "A Casa das Massas";
+        restaurante2.endereco = "Rua Araújo, Centro - São Paulo";
+        restaurante2.cnpj = "11.987.654/0001-55";
+        restaurante2.especialidade = "Comida Italiana";
+        restaurante2.quantidadeMesas = 40;
+
+        restaurante1.apresentar();
+        restaurante2.apresentar();
+
     }
 }
