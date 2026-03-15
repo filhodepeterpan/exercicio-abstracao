@@ -1,7 +1,5 @@
 package br.edu.fatecpg.tecprog.abstracao.view;
-import br.edu.fatecpg.tecprog.abstracao.model.Praia;
-import br.edu.fatecpg.tecprog.abstracao.model.Praca;
-import br.edu.fatecpg.tecprog.abstracao.model.Aeroporto;
+import br.edu.fatecpg.tecprog.abstracao.model.*;
 
 public class Main {
     public static void main(String [] args){
@@ -70,6 +68,28 @@ public class Main {
 
         guarulhos.venderPassagem();
         brasilia.autorizarEmbarque();
+
+        // ESTAÇÃO DE TREM
+        EstacaoDeTrem estacaoBras = new EstacaoDeTrem();
+        EstacaoDeTrem estacaoLuz = new EstacaoDeTrem();
+
+        estacaoBras.nome = "Estação Brás";
+        estacaoBras.endereco = "Praça Agente Cícero, Brás - São Paulo";
+        estacaoBras.linhasDeTrem = new String[] {"Linha 7-Rubi", "Linha 10-Turquesa", "Linha 11-Coral", "Linha 12-Safira", "Linha 13-Jade"};
+        estacaoBras.itinerarios = new String[] {"Jundiaí ↔ Rio Grande da Serra", "Estudantes ↔ Luz", "Calmon Viana ↔ Brás", "Aeroporto-Guarulhos ↔ Engenheiro Goulart"};
+        estacaoBras.expediente = "04:00 - 00:00";
+
+        estacaoLuz.nome = "Estação da Luz";
+        estacaoLuz.endereco = "Praça da Luz, Bom Retiro - São Paulo";
+        estacaoLuz.linhasDeTrem = new String[] {"Linha 7-Rubi", "Linha 11-Coral", "Linha 13-Jade"};
+        estacaoLuz.itinerarios = new String[] {"Jundiaí ↔ Luz", "Estudantes ↔ Luz", "Aeroporto-Guarulhos ↔ Luz"};
+        estacaoLuz.expediente = "04:00 - 00:00";
+
+        estacaoBras.apresentar();
+        estacaoLuz.apresentar();
+
+        estacaoBras.darPartida();
+        estacaoLuz.desembarcarPassageiro();
 
     }
 }
