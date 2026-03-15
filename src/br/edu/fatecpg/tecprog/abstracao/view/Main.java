@@ -175,5 +175,27 @@ public class Main {
 
         fazenda1.plantar();
         fazenda2.alimentarAnimais();
+
+        // DELEGACIA
+        Delegacia delegacia1 = new Delegacia();
+        Delegacia delegacia2 = new Delegacia();
+
+        delegacia1.nome = "1º Distrito Policial";
+        delegacia1.nivelAbrangencia = "Municipal";
+        delegacia1.qtdViaturas = 12;
+        delegacia1.qtdPoliciais = 85;
+        delegacia1.nivelGovernamental = "Estadual";
+
+        delegacia2.nome = "Polícia Federal - SP";
+        delegacia2.nivelAbrangencia = "Nacional";
+        delegacia2.qtdViaturas = 25;
+        delegacia2.qtdPoliciais = 200;
+        delegacia2.nivelGovernamental = "Federal";
+
+        delegacia1.apresentar();
+        delegacia2.apresentar();
+
+        delegacia1.prenderSuspeito();
+        delegacia1.registrarBO();
     }
 }
