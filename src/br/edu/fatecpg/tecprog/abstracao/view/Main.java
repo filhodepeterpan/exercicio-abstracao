@@ -197,5 +197,28 @@ public class Main {
 
         delegacia1.prenderSuspeito();
         delegacia1.registrarBO();
+
+        // IGREJA
+        Igreja igreja1 = new Igreja();
+        Igreja igreja2 = new Igreja();
+
+        igreja1.nome = "Catedral da Sé";
+        igreja1.endereco = "Praça da Sé, São Paulo";
+        igreja1.religiao = "Católica";
+        igreja1.diocese = "Arquidiocese de São Paulo";
+        igreja1.numeroAssentos = 8000;
+
+        igreja2.nome = "Igreja Universal";
+        igreja2.endereco = "Av. João Dias, São Paulo";
+        igreja2.religiao = "Evangélica";
+        igreja2.diocese = "Templo de Salomão";
+        igreja2.numeroAssentos = 10000;
+
+        igreja1.apresentar();
+        igreja2.apresentar();
+
+        igreja1.realizarMatrimonio();
+        igreja2.colherDizimo();
+
     }
 }
