@@ -131,5 +131,27 @@ public class Main {
 
         hotel1.reservarQuarto();
         hotel2.limparQuarto();
+
+        // MUSEU
+        Museu museu1 = new Museu();
+        Museu museu2 = new Museu();
+
+        museu1.nome = "Museu do Ipiranga";
+        museu1.endereco = "Parque da Independência, São Paulo";
+        museu1.qtdFuncionarios = 120;
+        museu1.exposicaoAtual = "Independência do Brasil";
+        museu1.precoIngresso = 30.00;
+
+        museu2.nome = "MASP";
+        museu2.endereco = "Av. Paulista, São Paulo";
+        museu2.qtdFuncionarios = 200;
+        museu2.exposicaoAtual = "Arte Europeia";
+        museu2.precoIngresso = 50.00;
+
+        museu1.apresentar();
+        museu2.apresentar();
+
+        museu1.abrirMuseu();
+        museu2.comprarArtefato();
     }
 }
