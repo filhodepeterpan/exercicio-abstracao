@@ -220,5 +220,28 @@ public class Main {
         igreja1.realizarMatrimonio();
         igreja2.colherDizimo();
 
+        //BIBLIOTECA
+        // BIBLIOTECA
+        Biblioteca biblioteca1 = new Biblioteca();
+        Biblioteca biblioteca2 = new Biblioteca();
+
+        biblioteca1.nome = "Biblioteca Municipal de São Vicente";
+        biblioteca1.endereco = "Rua Fr. Gaspar 280, São Vicente - SP";
+        biblioteca1.cnpj = "46.177.523/0001-09";
+        biblioteca1.telefone = "(13) 3467-5999";
+        biblioteca1.sessoes = new String[] {"Romance", "Sci-fi", "Medicina", "Revistas", "Filosofia" };
+
+        biblioteca2.nome = "Biblioteca Municipal Alberto Souza";
+        biblioteca2.endereco = "Praça Patriarca José Bonifácio, 58 - Centro, Santos - SP";
+        biblioteca2.cnpj = "58.200.015/0001-83";
+        biblioteca2.telefone = "(13) 3467-5999";
+        biblioteca2.sessoes = new String[] {"Aventura", "HQs", "Direito", "Autobiografia", "Autoajuda"};
+        
+        biblioteca1.apresentar();
+        biblioteca2.apresentar();
+        
+       biblioteca1.emitirCarteirinha();
+       biblioteca2.aplicarMulta();
+        
     }
 }
