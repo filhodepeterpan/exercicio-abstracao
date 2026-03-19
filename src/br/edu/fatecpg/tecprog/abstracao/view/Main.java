@@ -308,5 +308,28 @@ public class Main {
        
        hospital1.atenderPaciente();
        hospital2.internaPaciente();
+       
+       //SUPERMERCADO
+       Supermercado supermercado1 = new Supermercado();
+       Supermercado supermercado2 = new Supermercado();
+       
+       supermercado1.nome = "Carrefour Hipermercado São Vicente";
+       supermercado1.endereco = "v. Prefeito José Monteiro, 1045 - Jardim Independencia, São Vicente - SP";
+       supermercado1.cnpj = "43.259.548/0001-63";
+       supermercado1.pdvs = 30;
+       supermercado1.reputacao = 7.5;
+       
+       supermercado2.nome = "Assaí São Vicente";
+       supermercado2.endereco = "Av. Antônio Emmerich, 245 - Vila Cascatinha, São Vicente - SP";
+       supermercado2.cnpj = "06.057.223/0434-90";
+       supermercado2.pdvs = 30;
+       supermercado2.reputacao = 7.2;
+       
+       supermercado1.apresentar();
+       supermercado2.apresentar();
+       
+       supermercado1.abrirCaixa();
+       supermercado2.reporProduto();
+       
     }
 }
