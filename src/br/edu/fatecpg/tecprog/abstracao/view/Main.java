@@ -220,7 +220,6 @@ public class Main {
         igreja1.realizarMatrimonio();
         igreja2.colherDizimo();
 
-        //BIBLIOTECA
         // BIBLIOTECA
         Biblioteca biblioteca1 = new Biblioteca();
         Biblioteca biblioteca2 = new Biblioteca();
@@ -240,8 +239,29 @@ public class Main {
         biblioteca1.apresentar();
         biblioteca2.apresentar();
         
-       biblioteca1.emitirCarteirinha();
-       biblioteca2.aplicarMulta();
+        biblioteca1.emitirCarteirinha();
+        biblioteca2.aplicarMulta();
         
+        //ESCOLA
+        Escola escola1 = new Escola();
+        Escola escola2 = new Escola();
+        
+        escola1.nome = "Colégio Cellula Mater";
+        escola1.endereco = "Av. Presidente Wilson, 1252 - Centro, São Vicente - SP";
+        escola1.telefone = "(13) 3467-6160";
+        escola1.cnpj = "08.011.966/0001-36";
+        escola1.funcionamento = "07:00 - 19:00";
+        
+        escola2.nome = "Escola e Faculdade Fortec";
+        escola2.endereco = "Av. Presidente Wilson, 1013 - Itararé, São Vicente - SP";
+        escola2.telefone = "(13) 3569-2525";
+        escola2.cnpj = "44.309.573/0001-77),";
+        escola2.funcionamento = "09:00 - 20:00";
+        
+        escola1.apresentar();
+        escola2.apresentar();       
+        
+        escola1.cadastraAluno();
+        escola2.emitirHistorico();
     }
 }
