@@ -286,5 +286,27 @@ public class Main {
        
        universidade1.matriculaAluno();
        universidade2.validaEstagio();
+       
+       //HOSPITAL
+       Hospital hospital1 = new Hospital();
+       Hospital hospital2 = new Hospital();
+       
+       hospital1.nome = "Hospital do Vicentino";
+       hospital1.cnpj = "3021378";
+       hospital1.alvara = true;
+       hospital1.qtdleitos = 97;
+       hospital1.especialidades = new String []{"Clinica Geral","Emergencia","Ortopedia", "Pediatria"};
+       
+       hospital2.nome = "Hospital Irmã Dulce";
+       hospital2.cnpj = "57.571.275/0009-50";
+       hospital2.alvara = true;
+       hospital2.qtdleitos = 273;
+       hospital2.especialidades = new String [] {"Trauma", "Neurocirurgia", "Cirurgias eletivas"};
+       
+       hospital1.apresentar();
+       hospital2.apresentar();
+       
+       hospital1.atenderPaciente();
+       hospital2.internaPaciente();
     }
 }

@@ -13,7 +13,7 @@ public class Escola {
 				Endereço: %s
 				Telefone: %s
 				CNPJ: %s
-				Horário de Funcionamento: %s²
+				Horário de Funcionamento: %s
 				""", this.nome, this.endereco, this.telefone, this.cnpj, this.funcionamento);
 	}
 

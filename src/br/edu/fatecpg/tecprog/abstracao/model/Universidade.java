@@ -13,7 +13,7 @@ public class Universidade {
 				Endereço: %s
 				Telefone: %s
 				CNPJ: %s
-				Cursos: %s²
+				Cursos: %s
 				""", this.nome, this.endereco, this.telefone, this.cnpj, String.join(", " ,this.cursos));
 		}
 
