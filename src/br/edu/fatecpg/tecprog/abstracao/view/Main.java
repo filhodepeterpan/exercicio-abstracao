@@ -1,8 +1,9 @@
 package br.edu.fatecpg.tecprog.abstracao.view;
+
 import br.edu.fatecpg.tecprog.abstracao.model.*;
 
 public class Main {
-    public static void main(String [] args){
+	public static void main(String [] args){
         // PRAIA
         Praia praiaOcian = new Praia();
         Praia praiaGuilhermina = new Praia();
@@ -263,5 +264,27 @@ public class Main {
         
         escola1.cadastraAluno();
         escola2.emitirHistorico();
+        
+        //UNIVERSIDADE
+        Universidade universidade1  = new Universidade();
+        Universidade universidade2  = new Universidade();
+        
+        universidade1.nome = "Fatec Praia Grande";
+        universidade1.endereco = "Pça. Dezenove de Janeiro 144, Praia Grande, SP";
+        universidade1.telefone = "(13) 3591-1303 / 3591-6968";
+        universidade1.cnpj = "62.823.257/0129-64";
+        universidade1.cursos = new String[] {"Análise e Desenvolvimento de Sistemas","Comércio Exterior", "Desenvolvimento de Software Multiplataforma","Gestão Empresarial", "Processos Químicos"};
+        
+        universidade2.nome = "Fatec Rubens Lara";
+        universidade2.endereco = "Av. Senador Feijó, 350 - Vila Matias, Santos - SP,";
+        universidade2.telefone = "(13) 3226-4100";
+        universidade2.cnpj = "62.823.257/0001-09";
+        universidade2.cursos = new String[] {"Análise e Desenvolvimento de Sistemas","Ciência de Dados", "Gestão Portuária","Gestão de Recursos Humanos", "Logística", "Sistemas para Internet"};
+        
+       universidade1.apresentar();
+       universidade2.apresentar();
+       
+       universidade1.matriculaAluno();
+       universidade2.validaEstagio();
     }
 }

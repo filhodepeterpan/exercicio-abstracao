@@ -14,7 +14,7 @@ public class Escola {
 				Telefone: %s
 				CNPJ: %s
 				Horário de Funcionamento: %s²
-				""", this.nome, this.endereco, this.telefone, this.telefone, this.funcionamento);
+				""", this.nome, this.endereco, this.telefone, this.cnpj, this.funcionamento);
 	}
 
 	public void cadastraAluno() {
@@ -27,6 +27,6 @@ public class Escola {
 
 	public void controlaAcesso() {
 		System.out.println("\nVerificando identidade...");
-		System.out.println("\nAcesso Autorizado.");
+		System.out.println("Acesso Autorizado.");
 	}
 }

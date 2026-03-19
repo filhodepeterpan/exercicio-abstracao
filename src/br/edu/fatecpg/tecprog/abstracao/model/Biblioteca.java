@@ -4,8 +4,8 @@ public class Biblioteca {
 
     public String nome;
     public String endereco;
-    public String cnpj;
     public String telefone;
+    public String cnpj;
     public String[] sessoes;
 
     public void apresentar(){
@@ -15,7 +15,7 @@ public class Biblioteca {
                 CNPJ: %s
                 Telefone: %s
                 Sessoes: %s
-                """, this.nome, this.endereco, this.cnpj, this.telefone, String.join(", " ,this.sessoes));
+                """, this.nome, this.endereco, this.telefone, this.cnpj, String.join(", " ,this.sessoes));
     }
 
     public void cadastrarLivro(){
