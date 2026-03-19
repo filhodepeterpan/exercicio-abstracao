@@ -16,7 +16,7 @@ public class Hotel {
                 Quartos disponíveis: %d
                 Classificação: %d estrelas
                 Oferece café da manhã: %b
-                """, this.nome, this.endereco, this.quartosDisponiveis, this.classificacaoEstrelas, this.ofereceCafeDaManha);
+                """, this.nome, this.endereco, this.quartosDisponiveis, this.classificacaoEstrelas, this.ofereceCafeDaManha? "Sim" : "Não");
     }
 
     public void reservarQuarto(){
