@@ -336,27 +336,50 @@ public class Main {
 
 		supermercado1.abrirCaixa();
 		supermercado2.reporProduto();
-		
-		//SHOPPING
+
+		// SHOPPING
 		Shopping shopping1 = new Shopping();
 		Shopping shopping2 = new Shopping();
-		
+
 		shopping1.nome = "Praiamar Shopping";
 		shopping1.endereco = "R. Alexandre Martins, 80 - Aparecida, Santos - SP";
 		shopping1.vlestacionamento = 15;
-		shopping1.lojas = new String [] {"Zelo","Granado","Hering","Baccio di Latte"};
+		shopping1.lojas = new String[] { "Zelo", "Granado", "Hering", "Baccio di Latte" };
 		shopping1.tamanho = 130000;
-		
+
 		shopping2.nome = "Litoral Plaza";
 		shopping2.endereco = "Av. Ayrton Senna da Silva, 1511 - Xixová, Praia Grande - SP";
 		shopping2.vlestacionamento = 15;
-		shopping2.lojas = new String [] {"Jeronimo","Hope", "Starbucks", "Centauro"};
+		shopping2.lojas = new String[] { "Jeronimo", "Hope", "Starbucks", "Centauro" };
 		shopping2.tamanho = 90000;
-		
+
 		shopping1.apresentar();
 		shopping2.apresentar();
 
 		shopping1.cadastrarLoja();
 		shopping2.acionarSegurança();
+
+		// CINEMA
+		Cinema cinema1 = new Cinema();
+		Cinema cinema2 = new Cinema();
+
+		cinema1.nome = "Cine Roxy Gonzaga";
+		cinema1.cartaz = new String[] { "Devoradores de Estrelas", "Pânico 7", "Cara de Um, Focinho de Outro" };
+		cinema1.qtdassentos = 400;
+		cinema1.imax = false;
+		cinema1.qtdsalas = 5;
+
+		cinema2.nome = "Cinesystem Bourbon Shopping";
+		cinema2.cartaz = new String[] { "A noiva!", "Casamento Sangrento:A Viúva!", "O Velho Fusca" };
+		cinema2.qtdassentos = 400;
+		cinema2.imax = true;
+		cinema2.qtdsalas = 10;
+
+		cinema1.apresentar();
+		cinema2.apresentar();
+
+		cinema1.iniciarSessao();
+		cinema2.oferecerCombo();
+
 	}
 }
