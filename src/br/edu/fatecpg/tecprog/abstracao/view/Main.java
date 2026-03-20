@@ -380,6 +380,27 @@ public class Main {
 
 		cinema1.iniciarSessao();
 		cinema2.oferecerCombo();
+		
+		// TEATRO
+		Teatro teatro1 = new Teatro();
+		Teatro teatro2 = new Teatro();
 
+		teatro1.nome = "Teatro Municipal Braz Cubas";
+		teatro1.endereco = "Av. Senador Pinheiro Machado, 48 - Vila Matias, Santos - SP";
+		teatro1.emcartaz = "THE BEATLES ABBEY ROAD EM SANTOS";
+		teatro1.qtdlugares = 583;
+		teatro1.vlingresso = "R$ 45,00 à 100,00";
+
+		teatro2.nome = "Sabesp Frei Caneca";
+		teatro2.endereco = "R. Frei Caneca, 569 - Consolação, São Paulo - SP";
+		teatro2.emcartaz = "A Última Sessão de Freud";
+		teatro2.qtdlugares = 600;
+		teatro2.vlingresso = "Ingressos a partir de R$ 25,00 em até 12x";
+
+		teatro1.apresentar();
+		teatro2.apresentar();
+
+		teatro1.iniciarPeca();
+		teatro2.direcionarLuzes();
 	}
 }
