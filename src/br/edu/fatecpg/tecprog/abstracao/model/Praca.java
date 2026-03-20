@@ -1,7 +1,5 @@
 package br.edu.fatecpg.tecprog.abstracao.model;
 
-import java.util.Arrays;
-
 public class Praca {
     public String nome;
     public int qtdFuncionarios;
