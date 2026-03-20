@@ -424,5 +424,30 @@ public class Main {
 		
 		estadio1.anunciarVencedor();
 		estadio2.marcarJogos();
+		
+		//PARQUE
+		Parque parque1 = new Parque();
+		Parque parque2 = new Parque();
+		
+		parque1.nome = "Parque Ibirapuera";
+		parque1.endereco = "Av. Pedro Álvares Cabral, s/n - Vila Mariana, São Paulo - SP";
+		parque1.tamanho = 1584000;
+		parque1.tipo = "Público";
+		parque1.expediente = "05:00–23:00";
+		
+		parque2.nome = "Parque Trianon";
+		parque2.endereco = "Rua Peixoto Gomide, 949 - Cerqueira César, São Paulo - SP";
+		parque2.tamanho = 48600;
+		parque2.tipo = "Privado";
+		parque2.expediente = "06:00–18:00";
+		
+		parque1.apresentar();
+		parque2.apresentar();
+		
+		parque1.rondaSeguranca();
+		parque2.fecharParque();
+		
+		
+				
 	}
 }
