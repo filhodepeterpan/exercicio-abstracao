@@ -402,5 +402,27 @@ public class Main {
 
 		teatro1.iniciarPeca();
 		teatro2.direcionarLuzes();
+		
+		//ESTÁDIO
+		Estadio estadio1 = new Estadio();
+		Estadio estadio2 = new Estadio();
+		
+		estadio1.tamanho = 100000;
+		estadio1.capacidade = 62652;
+		estadio1.jogoatual = "Barcelona x New Castle";
+		estadio1.vlentrada = "A partir de US$ 305/US$ 346";
+		estadio1.placar = "Barcelona 7 x 2 New Castle";
+		
+		estadio2.tamanho = 152000;
+		estadio2.capacidade = 84744;
+		estadio2.jogoatual = "Real Madrid x City";
+		estadio2.vlentrada = "A partir de 590 €";
+		estadio2.placar = "Real Madrid 2 x 1 City";
+		
+		estadio1.apresentar();
+		estadio2.apresentar();
+		
+		estadio1.anunciarVencedor();
+		estadio2.marcarJogos();
 	}
 }
